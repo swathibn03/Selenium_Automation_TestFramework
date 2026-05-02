@@ -11,8 +11,8 @@ public class LoginTest extends BaseTest {
 	public void testValidLogin() {
 		LoginPage loginpage=new LoginPage(driver);
 		
-		loginpage.enterUsername("Admin");
-		loginpage.enterPassword("admin123");
+		loginpage.enterUsername("student");
+		loginpage.enterPassword("Password123");
 		loginpage.clickLogin();
 		
 		String pageTitle=driver.getTitle();
