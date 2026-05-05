@@ -10,9 +10,13 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class LoginPage {
 
 	private WebDriver driver;
+	
+	// Locators for Login page
 	private By usernameTexBox = By.id("username");
 	private By passwordTextBox = By.id("password");
 	private By LoginButton = By.id("submit");
+	
+	//Locators for after succesfull login
 	private By LogoutButton=By.linkText("Log out");
 
 	
