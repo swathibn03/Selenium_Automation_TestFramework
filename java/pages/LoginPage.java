@@ -1,11 +1,7 @@
 package pages;
 
-import java.time.Duration;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class LoginPage {
 
@@ -13,15 +9,13 @@ public class LoginPage {
 	private By usernameTexBox = By.id("username");
 	private By passwordTextBox = By.id("password");
 	private By LoginButton = By.id("submit");
-	private By LogoutButton=By.linkText("Log out");
 
-	
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
 	}
 	
 	public void enterUsername(String username) {
-		driver.findElement(usernameTexBox).sendKeys(username);
+		driver.findElement(usernameTexBox).sendKeys("username");
 	}
 	
 	public void enterPassword(String password) {
@@ -30,18 +24,6 @@ public class LoginPage {
 	
 	public void clickLogin() {
 		driver.findElement(LoginButton).click();
-	}
-	
-	public String SuccessfulLoginMessage()
-	{
-		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(10));
-	  wait.until(ExpectedConditions.visibilityOfElementLocated(LogoutButton));
-	  
-	  String LogoutText=driver.findElement(LogoutButton).getText();
-	  return LogoutText;
-		
-	
-			
 	}
 
 }

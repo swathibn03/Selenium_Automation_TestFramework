@@ -1,9 +1,8 @@
+<suite name="LoginTestSuite">
+<test name="LoginTests">
+<classes>
+	<class name="test.LoginTest"/>
+</classes>
+</test>
 
-<suite name="Suite">
-  <test thread-count="5" name="Test">
-    <classes>
-      <class name="base.BaseTest"/>
-      <class name="test.LoginTest"/>
-    </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+</suite>

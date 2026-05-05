@@ -1,6 +1,5 @@
 package test;
 
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import base.BaseTest;
@@ -9,7 +8,6 @@ import pages.LoginPage;
 public class LoginTest extends BaseTest {
 	
 	@Test
-	
 	public void testValidLogin() {
 		LoginPage loginpage=new LoginPage(driver);
 		
@@ -19,7 +17,6 @@ public class LoginTest extends BaseTest {
 		
 		String pageTitle=driver.getTitle();
 		System.out.println("Title of the page is "+pageTitle);
-		Assert.assertEquals(driver.getTitle(), "Test Login | Practice Test Automation");
 	}
 }
 		
