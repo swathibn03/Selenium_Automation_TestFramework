@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>LoginTests</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>4/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat May 02 11:07:55 IST 2026</td>
+<td>Started on:</td><td>Wed May 13 10:28:37 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>16 seconds (16190 ms)</td>
+<tr><td>Total time:</td><td>66 seconds (66895 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,16 +76,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='test.LoginTest.testValidLogin()'><b>testValidLogin</b><br>Test class: test.LoginTest</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;app&quot;]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[1]/div/div[2]/input&quot;}
-  (Session info: chrome=147.0.7727.56)
+<td title='tests.PracticeTableTest.verifyJavaFilterTest()'><b>verifyJavaFilterTest</b><br>Test class: tests.PracticeTableTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@type=&apos;radio&apos; and @value=&apos;Java&apos;]&quot;}
+  (Session info: chrome=147.0.7727.138)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
 Build info: version: &apos;4.43.0&apos;, revision: &apos;dd0f534&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [037300c4c5d0d13fbbc1f60b27b34e6f, findElement {using=xpath, value=//*[@id=&quot;app&quot;]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[1]/div/div[2]/input}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50445}, goog:processID: 8776, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50445/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 037300c4c5d0d13fbbc1f60b27b34e6f
+Command: [baa5b52443172f0b15787daa848766bf, findElement {using=xpath, value=//input[@type=&apos;radio&apos; and @value=&apos;Java&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.138, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59518}, goog:processID: 10456, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59518/devtoo..., se:cdpVersion: 147.0.7727.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: baa5b52443172f0b15787daa848766bf
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -97,19 +97,19 @@ Session ID: 037300c4c5d0d13fbbc1f60b27b34e6f
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:429)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:423)
-	at pages.LoginPage.enterUsername(LoginPage.java:20)
-	at test.LoginTest.testValidLogin(LoginTest.java:14)
+	at pages.PracticeTablePage.selectJavaLanguage(PracticeTablePage.java:23)
+	at tests.PracticeTableTest.verifyJavaFilterTest(PracticeTableTest.java:20)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1173340685", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1173340685'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;app&quot;]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[1]/div/div[2]/input&quot;}
-  (Session info: chrome=147.0.7727.56)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace103394766", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace103394766'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@type=&apos;radio&apos; and @value=&apos;Java&apos;]&quot;}
+  (Session info: chrome=147.0.7727.138)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
 Build info: version: &apos;4.43.0&apos;, revision: &apos;dd0f534&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [037300c4c5d0d13fbbc1f60b27b34e6f, findElement {using=xpath, value=//*[@id=&quot;app&quot;]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[1]/div/div[2]/input}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.56, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50445}, goog:processID: 8776, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50445/devtoo..., se:cdpVersion: 147.0.7727.56, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 037300c4c5d0d13fbbc1f60b27b34e6f
+Command: [baa5b52443172f0b15787daa848766bf, findElement {using=xpath, value=//input[@type=&apos;radio&apos; and @value=&apos;Java&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.138, chrome: {chromedriverVersion: 147.0.7727.117 (474cc805edd..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59518}, goog:processID: 10456, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59518/devtoo..., se:cdpVersion: 147.0.7727.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: baa5b52443172f0b15787daa848766bf
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -121,8 +121,8 @@ Session ID: 037300c4c5d0d13fbbc1f60b27b34e6f
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:429)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:423)
-	at pages.LoginPage.enterUsername(LoginPage.java:20)
-	at test.LoginTest.testValidLogin(LoginTest.java:14)
+	at pages.PracticeTablePage.selectJavaLanguage(PracticeTablePage.java:23)
+	at tests.PracticeTableTest.verifyJavaFilterTest(PracticeTableTest.java:20)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -151,7 +151,36 @@ Session ID: 037300c4c5d0d13fbbc1f60b27b34e6f
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
-<td>test.LoginTest@7cc0cdad</td></tr>
+<td>tests.PracticeTableTest@dd05255</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.PracticeTest.clickTestTableLink()'><b>clickTestTableLink</b><br>Test class: tests.PracticeTest</td>
+<td></td>
+<td>7</td>
+<td>tests.PracticeTest@7e6f74c</td></tr>
+<tr>
+<td title='tests.LoginTest.testValidLogin()'><b>testValidLogin</b><br>Test class: tests.LoginTest</td>
+<td></td>
+<td>28</td>
+<td>tests.LoginTest@3b69e7d1</td></tr>
+<tr>
+<td title='tests.PracticeTest.clickPracticeLinkTest()'><b>clickPracticeLinkTest</b><br>Test class: tests.PracticeTest</td>
+<td></td>
+<td>4</td>
+<td>tests.PracticeTest@7e6f74c</td></tr>
+<tr>
+<td title='tests.LoginTest.VerifySuccessfulLoginMessage()'><b>VerifySuccessfulLoginMessage</b><br>Test class: tests.LoginTest</td>
+<td></td>
+<td>3</td>
+<td>tests.LoginTest@3b69e7d1</td></tr>
 </table><p>
 </body>
 </html>

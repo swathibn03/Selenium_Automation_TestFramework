@@ -4,12 +4,14 @@ import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class LoginPage {
 
 	private WebDriver driver;
+	WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(10));
 	
 	// Locators for Login page
 	private By usernameTexBox = By.id("username");
@@ -18,6 +20,12 @@ public class LoginPage {
 	
 	//Locators for after succesfull login
 	private By LogoutButton=By.linkText("Log out");
+	
+	//Locators in Practice Page
+	private By PracticeLink=By.linkText("Practice");
+	private By TextExceptionsLink=By.linkText("Test Exceptions");
+	private By AddButton=By.id("add_btn");
+	private By secondRow=By.xpath("//*[@id=\"row2\"]/input");
 
 	
 	public LoginPage(WebDriver driver) {
@@ -38,14 +46,32 @@ public class LoginPage {
 	
 	public String SuccessfulLoginMessage()
 	{
-		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(10));
+	 WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(10));
 	  wait.until(ExpectedConditions.visibilityOfElementLocated(LogoutButton));
 	  
 	  String LogoutText=driver.findElement(LogoutButton).getText();
 	  return LogoutText;
-		
-	
-			
 	}
 
+	
+	public void clickPracticeLink(){
+		driver.findElement(PracticeLink).click();
+		}
+	
+	public void clickTestExceptionsLink() {
+		driver.findElement(TextExceptionsLink).click();
+		
+	}
+	
+	public void clickAddButton() {
+		driver.findElement(AddButton).click();
+		
+	}
+	
+	public boolean isRowDisplayed() {
+		WebElement element=wait.until(ExpectedConditions.visibilityOfElementLocated(secondRow));
+		return element.isDisplayed();
+		
+	}
+	
 }

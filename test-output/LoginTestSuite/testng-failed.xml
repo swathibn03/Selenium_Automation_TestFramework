@@ -3,13 +3,13 @@
 <suite name="Failed suite [LoginTestSuite]">
   <test thread-count="5" name="LoginTests(failed)">
     <classes>
-      <class name="test.LoginTest">
+      <class name="tests.PracticeTableTest">
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="testValidLogin"/>
+          <include name="verifyJavaFilterTest"/>
         </methods>
-      </class> <!-- test.LoginTest -->
+      </class> <!-- tests.PracticeTableTest -->
     </classes>
   </test> <!-- LoginTests(failed) -->
 </suite> <!-- Failed suite [LoginTestSuite] -->
