@@ -20,16 +20,22 @@ public class PracticeTablePage {
 	By tableRows = By.xpath("//table/tbody/tr");
 
 	public void selectJavaLanguage() {
+		WebElement javaRadio = driver.findElement(By.xpath("//input[@type='radio' and @value='Java']"));
+		String RadioButtonOption = javaRadio.getAttribute("value");
+		System.out.println("Selected radio button is " + RadioButtonOption);
 		driver.findElement(languageButton).click();
 	}
 
 	public boolean verifyJavaFilter() {
 		List<WebElement> rows = driver.findElements(tableRows);
 		for (WebElement row : rows) {
-			String rowText = row.getText();
-			System.out.println("Row text is " + rowText);
-			if (!rowText.contains("Java")) {
-				return false;
+			String rowText = row.getText().trim();
+			if (!rowText.isEmpty()) {
+				System.out.println("Row text is " + rowText);
+				if (!rowText.contains("Java")) {
+					return false;
+				}
+
 			}
 		}
 		return true;

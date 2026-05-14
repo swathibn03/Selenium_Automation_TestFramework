@@ -25,6 +25,12 @@ public class PracticeTest extends BaseTest {
 		
 		practicepage.clickPracticeLink();
 		Thread.sleep(3000);
+		String currentURL=driver.getTitle();
+		System.out.println("Practice link url "+currentURL);
+		Assert.assertTrue(driver.getTitle().contains("Practice"));
+		
+		System.out.println("Clicked Practice Link successfully");
+		Thread.sleep(3000);
 		extenttest.info("Clicked Practice Link successfully.");
 		extenttest.pass("Clicked Practice link and navigated to links page");
 	}
@@ -37,6 +43,10 @@ public class PracticeTest extends BaseTest {
 		PracticePage practicepage=new PracticePage(driver);
 		practicepage.clickTestTableLink();
 		Thread.sleep(3000);
+		String currentTableURL=driver.getTitle();
+		System.out.println("Practice link url "+currentTableURL);
+		Assert.assertTrue(driver.getTitle().contains("Table"));
+		System.out.println("Clicked Test Table link successfully");
 		
 		String path=ScreenshotUtil.captureScreenshot(driver, "Click Test Table Link");
 		extenttest.info("Clicked Test Table link successfully");
@@ -45,13 +55,17 @@ public class PracticeTest extends BaseTest {
 		
 	}
 	
-public void verifyJavaFilterTest() throws IOException, InterruptedException {
+@Test(dependsOnMethods="clickTestTableLink")
+
+	public void verifyJavaFilterTest() throws IOException, InterruptedException {
 		
 		extenttest=extentreports.createTest("Java Filter Test");
+		System.out.println("Selecting Java option for filter");
 		
 		PracticeTablePage practicetablepage=new PracticeTablePage(driver);
 		Thread.sleep(3000);
 		practicetablepage.selectJavaLanguage();
+		Thread.sleep(3000);
 		System.out.println("Selected Java option");
 		extenttest.info("Selected Java Radio button");
 		
